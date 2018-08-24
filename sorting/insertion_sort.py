@@ -8,14 +8,16 @@ def insertion_sort(collection):
     time complexity:
         - lower bound omega(n)
         - upper bound O(n^2)
+    
     space complexity:
         - O(1) => in place
+    
     idea:
         divide the array in two partitions: ordered and unordered
         at each iteration shift the current element in the ordered
         portion until it's in the right place.
     """
-    
+
     for i in range(1, len(collection)):
         # switch "<" with ">" to get descending order 
         while i > 0 and collection[i] < collection[i-1]:
