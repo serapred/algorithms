@@ -6,8 +6,9 @@ def insertion_sort(collection):
     @returns: same collection in ascending order
     
     time complexity:
-        - lower bound omega(n)
-        - upper bound O(n^2)
+        - lower bound   omega(n)
+        - average       theta(n^2) 
+        - upper bound   bigO(n^2)
     
     space complexity:
         - O(1) => in place
