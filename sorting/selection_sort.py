@@ -1,12 +1,14 @@
 def selection_sort(collection):
+    
     """
     Pure pyton implementation of the selection sort algorithm
     @collection: some mutable collection of unordered items
     @returns: same collection in ascending order
     
     time complexity:
-        - lower bound omega(n^2)
-        - upper bound O(n^2)
+        - lower bound   omega(n^2)
+        - average       theta(n^2)
+        - upper bound   bigO(n^2)
     
     space complexity:
         - O(1) => in place
@@ -14,7 +16,7 @@ def selection_sort(collection):
     idea:
         divide the array in two partitions: ordered and unordered
         at each iteration find the minimum in the unsorted portion
-        and slap it in the i-th position of the array
+        and slap it in the i-th position of the sorted one
     """
 
     # since this is called twice it's better to save it
