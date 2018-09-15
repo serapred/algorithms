@@ -29,5 +29,6 @@ def selection_sort(collection):
 
 if __name__ == '__main__':
 
-    c = [3,2,4,1,5]
-    print selection_sort(c)
+    a = [2,4,12,18,5,7,9,15,12]
+    b = selection_sort(a)
+    print b

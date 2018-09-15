@@ -22,6 +22,7 @@ def quick_sort_rec(collection):
 
     quick_sort_helper(collection,0,len(collection)-1)
 
+    # only for conformity to the other implementations
     return collection
 
 def partitioning(alist, start, end):
@@ -64,8 +65,6 @@ def partitioning(alist, start, end):
 
 if __name__ == '__main__':
     
-    a = [9,24,3,9,12,15,8,7,9,16,6]
-
-    quick_sort_rec(a)
-
-    print a
+    a = [2,4,12,18,5,7,9,15,12]
+    b = quick_sort_rec(a)
+    print b

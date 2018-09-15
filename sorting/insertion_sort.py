@@ -25,6 +25,6 @@ def insertion_sort(collection):
 
 if __name__ == '__main__':
     
-    c = [3,2,4,1,5]
-    print insertion_sort(c)
-
+    a = [2,4,12,18,5,7,9,15,12]
+    b = insertion_sort(a)
+    print b
