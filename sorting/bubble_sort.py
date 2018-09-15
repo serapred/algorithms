@@ -12,12 +12,6 @@ def bubble_sort(collection):
     
     space complexity:
         - O(1) => in place
-    
-    idea:
-        repeatedly step through the list to be sorted, 
-        compare each pair of adjacent items and swap them if they are in the wrong order. 
-        The pass through the list is repeated until no swaps are needed.
-        Like bubbles in a flut of champagne.
     """
 
     swap = True # flags to determine if at any scan a swap op has taken place

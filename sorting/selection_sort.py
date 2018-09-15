@@ -12,11 +12,6 @@ def selection_sort(collection):
     
     space complexity:
         - O(1) => in place
-    
-    idea:
-        divide the array in two partitions: ordered and unordered
-        at each iteration find the minimum in the unsorted portion
-        and slap it in the i-th position of the sorted one
     """
 
     # since this is called twice it's better to save it

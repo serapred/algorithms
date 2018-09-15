@@ -12,10 +12,6 @@ def merge_sort_rec(collection):
     
     space complexity:
         - O(n) => ausiliary vector needed
-    
-    idea:
-        divide the array in two partitions recursively, when
-        you can't divide further merge them in an ordered version.
     """
 
     if len(collection) <= 1: #base case
@@ -31,23 +27,23 @@ def merge_sort_rec(collection):
 def merge(left,right):
 
     #sliding indexes
-    left_index, right_index = 0, 0
+    i, j = 0, 0
     
     # ausiliary vector required, increase spatial complexity
     result = []
     
     # compare elements from both vectors and append the lesser
-    while left_index < len(left) and right_index < len(right):
-        if left[left_index] < right[right_index]:
-            result.append(left[left_index])
-            left_index += 1
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
         else:
-            result.append(right[right_index])
-            right_index += 1
+            result.append(right[j])
+            j += 1
 
     # add vector's reminders if needed
-    result += left[left_index:]
-    result += right[right_index:]
+    result += left[i:]
+    result += right[j:]
     return result
 
 if __name__ == '__main__':

@@ -12,11 +12,6 @@ def insertion_sort(collection):
     
     space complexity:
         - O(1) => in place
-    
-    idea:
-        divide the array in two partitions: ordered and unordered
-        at each iteration shift the current element in the ordered
-        portion until it's in the right place.
     """
 
     for i in range(1, len(collection)):
