@@ -1,6 +1,21 @@
 def heapsort(collection):
+   
+    """
+    Pure pyton implementation of the heap sort algorithm
+    @collection: some mutable collection of unordered items
+    @returns: same collection in ascending order
+    
+    time complexity:
+        - lower bound   omega(n log(n))
+        - average       theta(n log(n))
+        - upper bound   bigO(n log(n))
+    
+    space complexity:
+        - O(1) => in place
+    """
+    
+    n = len(collection) #size of collection
 
-    n = len(collection)
 
     for i in range(n,-1,-1):
         max_heapify(collection,n,i)

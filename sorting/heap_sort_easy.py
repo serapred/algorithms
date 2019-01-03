@@ -1,6 +1,22 @@
 import heapq
 
 def heapsort(collection):
+    
+    """
+    Pure pyton implementation of the heap sort algorithm
+    using the heapq native module
+    @collection: some mutable collection of unordered items
+    @returns: same collection in ascending order
+    
+    time complexity:
+        - lower bound   omega(n log(n))
+        - average       theta(n log(n))
+        - upper bound   bigO(n log(n))
+    
+    space complexity:
+        - O(1) => in place
+    """
+
     lsorted = []
     heapq.heapify(collection)
     
