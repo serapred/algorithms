@@ -33,5 +33,5 @@ def check_17(v, s):
 
 if __name__ == '__main__':
     res = fibonacci(check_17, 1000)
-    if (res != None):
+    if (res is not None):
         print(res)
