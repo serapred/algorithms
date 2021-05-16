@@ -4,7 +4,7 @@ import functools
 
 
 def decorator(func):
-    @functools.wraps(func) # redirects inspection
+    @functools.wraps(func)  # redirects inspection
     def wrapper_decorator(*args, **kwargs):
         # Do something before
         value = func(*args, **kwargs)
@@ -27,7 +27,7 @@ def repeat(num_times):
     return decorator_repeat
 
 
-# mix of both, can be called w/o argumentss
+# mix of both, can be called w/o arguments
 
 
 def repeat(_func=None, *, num_times=2):
