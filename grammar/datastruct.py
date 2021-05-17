@@ -1,3 +1,6 @@
+# The 4 built-in data types used to store collections of data
+
+
 # list
 """
 lists can be used to dinamically manipulate sequences
