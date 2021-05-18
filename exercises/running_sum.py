@@ -2,10 +2,12 @@
 Given an array N, we define its running sum as: N[i] = sum(N[0], N[1],...N[i]).
 Return the running sum of N.
 
-example input:
+sample input:
+
 - nums = [1,2,3,4]
 
-example output:
+sample output:
+
 - result = [1, 3, 6, 10] ([1, 1+2, 1+2+3, 1+2+3+4])
 
 """

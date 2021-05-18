@@ -8,8 +8,8 @@ Note: Remember that lists of lists are not the same as matrices
 highly inefficient.
 
 To parallelize or simply stream to memory the matrix,
-the best approach is to split the matrix in chunks,
-by converting the list into an np.array object
+the best approach is to split the matrix into chunks,
+by converting the list into a np.array object
 
 sample input:
 
@@ -44,4 +44,5 @@ def isToeplitzMatrix(matrix):
     #    since there is no need to prepend the removed tail
 
     # one liner, based on .2 & .3
+    # assumes the whole matrix loaded in memory twice
     return all(row2[1:] == row1[:-1] for row1, row2 in zip(matrix, matrix[1:]))
